@@ -1,0 +1,12 @@
+https://consultabd.wordpress.com/2019/08/28/cardinalidade/
+https://www.luis.blog.br/relacionamento-entre-entidades-tipos-e-cardinalidade.html
+
+https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
+
+https://consultabd.wordpress.com/2019/09/30/cardinalidade-n-x-n/
+
+https://support.microsoft.com/pt-br/office/v%C3%ADdeo-criar-rela%C3%A7%C3%B5es-muitos-para-muitos-e65bcc53-8e1c-444a-b4fb-1c0b8c1f5653
+
+https://leonardofonseca.com.br/2021/05/05/relacionamento-em-um-modelo-relacional-parte-2/
+
+https://consultabd.wordpress.com/2019/09/30/cardinalidade-n-x-n/
