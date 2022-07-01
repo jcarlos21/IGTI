@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 - Eventos</title>
+</head>
+<body onLoad="load()">
+    <!-- onChange
+    onClick
+    onLoad
+    onMouseOver
+    onMouseOut
+    OnSubmit -->
+
+    <!-- <input type="text" id="ip">
+    <button onClick="clicar()">Enviar</button> -->
+
+    <!-- <img onMouseOut="mouseOut()" src="" alt="praia" id="img1"> -->
+
+<form onSubmit="sub()">
+    <input type="text" id="ip">
+    <input type="submit">
+</form>
+
+    <script>
+        function change() {
+            alert("Algo mudou!");
+        }
+
+        function clicar(){
+            alert(document.getElementById("ip").value)
+        }
+
+        function load(){
+            document.getElementById("img1").src = "https://th.bing.com/th/id/R.a021f2e44f03932e0be4fec8b01abe9d?rik=fJcZl7gkzJNuvA&pid=ImgRaw&r=0"
+        }
+
+        function mouseOver(){
+            document.getElementById("img1").src = "https://live.staticflickr.com/2415/2172887886_11efbe3322_b.jpg"
+        }
+
+        function mouseOut(){
+            document.getElementById("img1").src = "https://live.staticflickr.com/2415/2172887886_11efbe3322_b.jpg"
+        }
+
+        function sub(){
+            alert(document.getElementById("ip").value)
+        }
+    </script>
+
+
+
+</body>
+</html>
