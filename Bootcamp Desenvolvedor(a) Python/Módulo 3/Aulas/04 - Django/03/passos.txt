@@ -1,0 +1,41 @@
+-----------------------------------------------------------------------------------
+- Verificar a versão do python: python --version
+- Instalar o env: sudo apt install python3.10-venv
+- Criar um ambiente virtual: python3 -m venv ./env
+- Ativar o ambiente virtual: source ./env/bin/activate
+- Instalação do Django: pip install django
+- Verificar versão do django: python3 -m django --version
+- Guardar as depedências: pip freeze > requeriments.txt
+-----------------------------------------------------------------------------------
+- Criando o primeiro projeto: django-admin startproject projeto1
+- Importe das configurações no settings.py:
+    - import os
+    - STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    - DIRS': ['templates']
+- Subindo a aplicação: python manage.py runserver
+-----------------------------------------------------------------------------------
+
+- Criação de aplicativo dentro do projeto: python mange.py startapp app1
+- Criação da pasta 'templates' dentro da pasta 'app1'
+- Foi criado o arquivo 'urls.py' dentro da pasta 'app1'
+- Foi incluso:
+    - from django.urls import path, include # foi incluso o 'include'
+    - path('app1', include('app1.urls')),  # na 'urls.py da pasta projeto1, indicando a 'urls.py' do app1
+    - no arquivo 'urls.py' (criado em app1) foi incluso:
+
+        from django.urls import path
+        from .views import index
+
+        urlpatterns = [
+            path('', index, name='index')
+        ]
+
+- No aqruivo 'views.py' dentro da pasta 'app1' foi inserido o código:
+    
+    from django.http import HttpResponse  # Serve para dar uma resposta HTTP
+
+    def index(request):
+        return HttpResponse('Hello World!!!!')
+
+- Subindo a aplicação: python manage.py runserver
+-----------------------------------------------------------------------------------
